@@ -1,6 +1,6 @@
 # goit-react-hw-03-phonebook
 
-Робота є копією [попереднього завдання](https://github.com/syniepolskyi/goit-react-hw-02-phonebook)
+Інтерфейс і логіка описані в [попередній роботі](https://github.com/syniepolskyi/goit-react-hw-02-phonebook)
 
 ## LocalStorage
 
