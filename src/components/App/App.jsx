@@ -4,6 +4,7 @@ import { ContactForm } from '../ContactForm';
 import { ContactList } from '../ContactList';
 import { Filter } from '../Filter';
 import toast, { Toaster } from 'react-hot-toast';
+import crypto from 'crypto';
 
 export class App extends React.Component {
   state = {
@@ -65,7 +66,7 @@ export class App extends React.Component {
       contacts: [
         ...this.state.contacts,
         {
-          id: crypto.randomUUID(),
+          id: crypto.randomBytes(16).toString('hex'),
           name: name.trim(),
           number: number.trim(),
         },
