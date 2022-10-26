@@ -1,7 +1,7 @@
 import { default as React } from 'react';
 import { default as PropTypes } from 'prop-types';
 import { ContactFormStyled } from './ContactForm.styled';
-import crypto from 'crypto';
+import { nanoid } from 'nanoid';
 import {
   Button,
   InputGroup,
@@ -34,8 +34,8 @@ export class ContactForm extends React.Component {
     }
   };
 
-  inputNameId = crypto.randomBytes(16).toString('hex');
-  inputNumberId = crypto.randomBytes(16).toString('hex');
+  inputNameId = nanoid();
+  inputNumberId = nanoid();
 
   render() {
     const { name, number } = this.state;
