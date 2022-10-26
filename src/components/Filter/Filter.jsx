@@ -1,9 +1,10 @@
 import { default as React } from 'react';
 import { default as PropTypes } from 'prop-types';
+import { nanoid } from 'nanoid';
 import { InputGroup, InputLabel, Input, InputBar } from '../App/App.styled';
 
 export class Filter extends React.Component {
-  inputFilterId = crypto.randomUUID();
+  inputFilterId = nanoid();
   filterSize = 230;
 
   render() {
