@@ -103,8 +103,6 @@ export class App extends React.Component {
         <Toaster position="top-right" />
         <h1>Phonebook</h1>
         <ContactForm
-          name={this.state.name}
-          number={this.state.number}
           addContact={this.addContact}
         />
 
